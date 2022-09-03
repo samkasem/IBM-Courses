@@ -1,0 +1,11 @@
+applications:
+  - name: djangoapp-mrsunshine52
+    routes:
+      - route: djangoapp-mrsunshine52.mybluemix.net
+    memory: 128M
+    buildpack: python_buildpack
+  - name: djangoapp-nginx
+    routes:
+      - route: djangoapp-mrsunshine52.mybluemix.net/static
+    memory: 128M
+    buildpack: staticfile_buildpack
